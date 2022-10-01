@@ -1,8 +1,5 @@
 @extends('registration/registration')
 @section('container')
-<div>
-    <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-blue-900">Login Page</h2>
-</div>
 <div class="inline-flex">
     <a href="{{url('/login')}}" class="group relative flex w-full justify-center rounded-l border border-transparent bg-blue-700 py-2 px-[88px] text-sm font-medium text-white focus:outline-none">
         Login Admin
