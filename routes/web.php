@@ -21,14 +21,10 @@ Route::get('/register', function () {
     return view('registration/signup');
 });
 
-Route::get('/registration', function () {
-    return view('regis');
-});
-
 Route::get('/admin', function () {
     return view('navbar');
 });
 
-Route::get('/dev', function () {
-    return view('dashboard');
-});
+// Route::get('/dev', function () {
+//     return view('dashboard');
+// });
