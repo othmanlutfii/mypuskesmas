@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="bg-blue-50">
+<body class="bg-gray-50">
     <div>
         <nav class="bg-white border-b border-blue-200 fixed z-30 w-full">
             <div class="px-3 py-3 lg:px-5 lg:pl-3">
@@ -30,21 +30,13 @@
                         </a>
                     </div>
                     <div class="flex items-center">
-                        <button id="toggleSidebarMobileSearch" type="button" class="lg:hidden text-blue-500 hover:text-blue-900 hover:bg-blue-100 p-2 rounded-lg">
-                            <span class="sr-only">Search</span>
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div class="hidden lg:flex items-center">
-
-                        </div>
+                    
                         <a href="/login" class="hidden sm:inline-flex ml-5 text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-cyan-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center mr-3">
 
                             <svg class="svg-inline--fa fa-gem -ml-1 mr-2 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
                             </svg>
-                            Admin
+                            Log Out
                         </a>
                     </div>
 
@@ -56,77 +48,82 @@
                 <div class="relative flex-1 flex flex-col min-h-0 border-r border-blue-200 bg-white pt-0">
                     <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
                         <div class="flex-1 px-3 bg-white divide-y space-y-1">
-                            <ul class="space-y-2 pb-2">
-                                <li>
-                                    <form action="#" method="GET" class="lg:hidden">
-                                        <label for="mobile-search" class="sr-only">Search</label>
-                                        <div class="relative">
-                                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                                <svg class="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
-                                                </svg>
-                                            </div>
-                                            <input type="text" name="email" id="mobile-search" class="bg-blue-50 border border-blue-300 text-blue-900 text-sm rounded-lg focus:ring-cyan-600 focus:ring-cyan-600 block w-full pl-10 p-2.5" placeholder="Search">
-                                        </div>
-                                    </form>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-base text-blue-900 font-normal rounded-lg flex items-center p-2 hover:bg-blue-100 group">
-                                        <!-- <svg class="w-6 h-6 text-blue-500 group-hover:text-blue-900 transition duration-75" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-                                            <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-                                        </svg> -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-500 group-hover:text-blue-900 transition duration-75">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
-                                        </svg>
-
-                                        <span class="ml-3">Patient</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank" class="text-base text-blue-900 font-normal rounded-lg hover:bg-blue-100 flex items-center p-2 group ">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500 flex-shrink-0 group-hover:text-blue-900 transition duration-75" fill="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-                                        </svg>
-
-                                        <span class="ml-3 flex-1 whitespace-nowrap">Admin</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-base text-blue-900 font-normal rounded-lg hover:bg-blue-100 flex items-center p-2 group ">
-                                        <svg class="w-6 h-6 text-blue-500 flex-shrink-0 group-hover:text-blue-900 transition duration-75" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
-                                        </svg>
-                                        <span class="ml-3 flex-1 whitespace-nowrap">Doctor</span>
-                                    </a>
-                                </li>
-
-                            </ul>
                             <div class="space-y-2 pt-2">
-                                <a href="#" target="_blank" class="text-base text-blue-900 font-normal rounded-lg hover:bg-blue-100 group transition duration-75 flex items-center p-2">
-                                    <svg class="w-6 h-6 text-blue-500 flex-shrink-0 group-hover:text-blue-900 transition duration-75" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
-                                        <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
+                                
+                                <a href="ruang" class="text-base text-blue-900 font-normal rounded-lg hover:bg-blue-100 group transition duration-75 flex items-center p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-blue-500 flex-shrink-0 group-hover:text-blue-900 transition duration-75" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M3 3h18v18H3zM12 8v8m-4-4h8" />
                                     </svg>
-                                    <span class="ml-3">Jadwal</span>
+
+
+                                    <span class="ml-3">Ruang</span>
                                 </a>
-                                <a href="#" target="_blank" class="text-base text-blue-900 font-normal rounded-lg hover:bg-blue-100 group transition duration-75 flex items-center p-2">
+                                <a href="rawat-inap" class="text-base text-blue-900 font-normal rounded-lg hover:bg-blue-100 group transition duration-75 flex items-center p-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-500 flex-shrink-0 group-hover:text-blue-900 transition duration-75">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z" />
                                     </svg>
 
 
-                                    <span class="ml-3">Ruang Inap</span>
+                                    <span class="ml-3">Rawat Inap</span>
                                 </a>
 
                             </div>
+                            <ul class="space-y-2 pt-2">
+                                
+                                <li>
+                                    <a href="pasien" class="text-base text-blue-900 font-normal rounded-lg flex items-center p-2 hover:bg-blue-100 group">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-blue-500 group-hover:text-blue-900 transition duration-75">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                                        </svg>
+
+                                        <span class="ml-3">Pasien</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="petugas" class="text-base text-blue-900 font-normal rounded-lg hover:bg-blue-100 flex items-center p-2 group ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500 flex-shrink-0 group-hover:text-blue-900 transition duration-75" fill="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                                        </svg>
+
+                                        <span class="ml-3 flex-1 whitespace-nowrap">Petugas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dokter" class="text-base text-blue-900 font-normal rounded-lg hover:bg-blue-100 flex items-center p-2 group ">
+                                        <svg class="w-6 h-6 text-blue-500 flex-shrink-0 group-hover:text-blue-900 transition duration-75" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <span class="ml-3 flex-1 whitespace-nowrap">Dokter</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <div class="space-y-2 pt-2">
+                                <a href="pembayaran" class="text-base text-blue-900 font-normal rounded-lg hover:bg-blue-100 group transition duration-75 flex items-center p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-blue-500 flex-shrink-0 group-hover:text-blue-900 transition duration-75" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                                        <path d="M7 15h0M2 9.5h20" />
+                                    </svg>
+                                    <span class="ml-3">Pembayaran</span>
+                                </a>
+
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </aside>
-        </div>
+    <div class="bg-gray-900 opacity-50 hidden fixed inset-0 z-10" id="sidebarBackdrop"></div>
+            <div id="main-content" class="h-full w-full bg-gray-50 relative overflow-y-auto lg:ml-64">
+        @yield('container')
     </div>
 
+
+
 </body>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://demo.themesberg.com/windster/app.bundle.js"></script>
 
 </html>
